@@ -1,0 +1,25 @@
+Download nginx for windows (Thanks Jordan)
+
+http://nginx-win.ecsds.eu/download/nginx%201.7.12.1%20Lizard.zip 
+
+Unzip the file into a directory such as  c:\stream\nginx
+
+Copy the nginx.conf (from this github) into that directory c:\stream\nginx
+
+Turn off your local firewall or allow port 1935,1936,1937, and 1938
+
+run nginx.exe 
+
+Point your RTMP source to  (Cameras)
+
+Source1      rtmp:\\IPaddressOfWidowsBox:1935\live1\cam
+Source2      rtmp:\\IPaddressOfWidowsBox:1936\live2\cam
+Source3      rtmp:\\IPaddressOfWidowsBox:1937\live3\cam
+Source4      rtmp:\\IPaddressOfWidowsBox:1938\live4\cam
+
+Add media source to OBS 
+
+Source1      rtmp:\\IPaddressOfWidowsBox:1935\live1\cam
+Source2      rtmp:\\IPaddressOfWidowsBox:1936\live2\cam
+Source3      rtmp:\\IPaddressOfWidowsBox:1937\live3\cam
+Source4      rtmp:\\IPaddressOfWidowsBox:1938\live4\cam
